@@ -24,18 +24,25 @@
 	       src="https://tr.line.me/tag.gif?c_t=lap&t_id=067060a7-86d8-4ef7-a893-94b17019c310&e=pv&noscript=1" />
 	</noscript>
 	<!-- End LINE Tag Base Code -->
-  <script>
-_lt('send', 'cv', {
-  type: 'EIC-ADS'
-},['067060a7-86d8-4ef7-a893-94b17019c310']);
-</script>
 	<script>
-		setTimeout(function() {
+	_lt('send', 'cv', {
+	  type: 'EIC-ADS'
+	},['067060a7-86d8-4ef7-a893-94b17019c310']);
+	</script>
+	<script>
+		// Redirect based on device type
+		var userAgent = navigator.userAgent.toLowerCase();
+		if (/mobile|android|iphone|ipad|iemobile|wpdesktop|opera mini/i.test(userAgent)) {
+			// Mobile redirect URL
 			window.location.href = "https://line.me/R/oaMessage/@scbeic/?กดส่งเพื่อรับบทวิเคราะห์-EVs";
-		}, 3000);
+		} else {
+			// PC redirect URL
+			window.location.href = "https://bit.ly/42dkmsA";
+		}
 	</script>
 </head>
 <body>
 </body>
 </html>
+
 
